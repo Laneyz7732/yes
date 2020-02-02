@@ -30,7 +30,7 @@ default_config = {
 "BotAutoReconnect" : BotAutoReconnect,
 }
 
-bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="IngeniousCoder's Modmail Bot")
+bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="")
 bot.remove_command("help")
 
 
