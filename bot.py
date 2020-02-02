@@ -91,10 +91,9 @@ async def help(ctx):
     if ctx.guild.id == default_config.get("StaffGuildID"):
       prefix = default_config.get("BotPrefix")
       main_guild = bot.get_guild(default_config.get("MainGuildID"))
-      help1 = discord.Embed(title='Hello!', description=f"I am an instance of [IngeniousCoder\'s Modmail Bot](https://github.com/IngeniousCoder/Discord-Modmail). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
-      help1.set_author(name='IngeniousCoder\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
-      help1.add_field(name="Help me!",value="Donate to me [
-                      ](https://patreon.com/eltontay11) or [Star my repository!](https://github.com/IngeniousCoder/Discord-Modmail)",inline=False)
+      help1 = discord.Embed(title='Hello!', description=f"Dm Me To Contact Mods Of {main_guild.name}!", colour=0xDEADBF)
+      help1.set_author(name='Speedicus\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
+      help1.add_field(name="Help me!",value=",inline=False)
       help1.add_field(name="{}uptime".format(prefix), value="Shows bot uptime", inline=False)
       help1.add_field(name="{}help".format(prefix), inline=False, value="Shows the help message.")
       help1.add_field(name="{}info".format(prefix), inline=False, value="Shows bot info.")
@@ -108,7 +107,7 @@ async def help(ctx):
       help1.set_footer(text="IngeniousMail™ V1.0 - Soruce code is available in Github!")
       await ctx.send(embed=help1)
     else:
-      await ctx.send("This command only works in the staff guild. If you are a user who wants to use the bot, information can be found here : https://github.com/IngeniousCoder/Discord-Modmail")
+      await ctx.send("This command only works in the staff guild. If you are a user who wants to use the bot message @Speedicus#0001)
 
 
 
@@ -124,13 +123,13 @@ async def info(ctx):
     t_2_uptime = time.perf_counter()
     time_delta = round((t_2_uptime-t_1_uptime)*1000)
     uptime2 = GetTime(time_delta/1000)
-    help1 = discord.Embed(title='Hello!', description=f"I am an instance of [IngeniousCoder\'s Modmail Bot](https://github.com/IngeniousCoder/Discord-Modmail). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
+    help1 = discord.Embed(title='Hello!', description=). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
     help1.set_author(name='IngeniousCoder\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
-    help1.add_field(name="Help me!",value="Donate to me [here](https://patreon.com/eltontay11) or [Star my repository!](https://github.com/IngeniousCoder/Discord-Modmail)",inline=False)
+    help1.add_field(name="Help me!",value=")",inline=False)
     help1.add_field(name="Uptime", value=f"{uptime2}", inline=False)
     help1.add_field(name="Operating on", value=guild_main.name)
     help1.add_field(name="Discord.py Rewrite Version", value=discord.__version__)
-    help1.add_field(name="Source", value="https://github.com/IngeniousCoder/Discord-Modmail")
+    help1.add_field(name="Source", value=")
     help1.set_footer(text="IngeniousMail™ V1.0 - Soruce code is available in Github!")
     await ctx.send(embed=help1)
 
